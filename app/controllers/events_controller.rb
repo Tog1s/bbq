@@ -4,16 +4,15 @@ class EventsController < ApplicationController
   before_action :set_current_user_event, only: [:edit, :update, :destroy]
 
   # GET /events
-  # GET /events.json
   def index
     @events = Event.all
   end
 
   # GET /events/1
-  # GET /events/1.json
   def show
     @new_comment = @event.comments.build(params[:comment])
     @new_subscription = @event.subscriptions.build(params[:subscription])
+    @new_photo = @event.photos.build(params[:photo])
   end
 
   # GET /events/new
@@ -26,7 +25,6 @@ class EventsController < ApplicationController
   end
 
   # POST /events
-  # POST /events.json
   def create
     @event = current_user.events.build(event_params)
 

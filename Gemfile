@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise', '~> 4.6'
 gem 'devise-i18n'
 gem 'russian'
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'rmagick'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootsnap', '>= 1.1.0', require: false

@@ -11,6 +11,8 @@ class User < ApplicationRecord
 
   after_commit :link_subscriptions, on: :create
 
+  mount_uploader :avatar, AvatarUploader
+
   private
 
   def set_name
@@ -21,5 +23,4 @@ class User < ApplicationRecord
     Subscription.where(user_id: nil, user_email: self.email)
       .update_all(user_id: self.id)
   end
-
 end
