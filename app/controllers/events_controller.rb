@@ -44,11 +44,9 @@ class EventsController < ApplicationController
   def update
     respond_to do |format|
       if @event.update(event_params)
-        format.html { redirect_to @event, notice: 'Event was successfully updated.' }
-        format.json { render :show, status: :ok, location: @event }
+        format.html { redirect_to @event, notice: I18n.t('controllers.events.created') }
       else
         format.html { render :edit }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -66,7 +64,7 @@ class EventsController < ApplicationController
   private
 
   def set_current_user_event
-    @event = current_user.events.find(prams[:id])
+    @event = current_user.events.find(params[:id])
   end
 
     def set_event
