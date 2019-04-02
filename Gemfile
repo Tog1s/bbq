@@ -16,6 +16,7 @@ gem 'devise-i18n'
 gem 'russian'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'rmagick'
+gem 'fog-aws'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
