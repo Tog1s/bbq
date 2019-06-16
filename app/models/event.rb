@@ -6,6 +6,8 @@ class Event < ApplicationRecord
   has_many :subscriptions
   has_many :subscribers, through: :subscriptions, source: :user
   has_many :photos
+  has_many :subscriptions, dependent: :delete_all
+
 
 
   validates :user, presence: true
