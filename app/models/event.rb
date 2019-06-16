@@ -8,8 +8,6 @@ class Event < ApplicationRecord
   has_many :photos
   has_many :subscriptions, dependent: :delete_all
 
-
-
   validates :user, presence: true
   validates :title, presence: true, length: {maximum: 255}
   validates :address, presence: true
@@ -18,5 +16,4 @@ class Event < ApplicationRecord
   def visitors
     (subscribers + [user]).uniq
   end
-
 end
