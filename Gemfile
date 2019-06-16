@@ -21,6 +21,7 @@ gem 'fog-aws'
 gem 'twitter-bootstrap-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'turbolinks', '~> 5.2'
+
 group :development, :test do
   gem 'sqlite3', '< 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
