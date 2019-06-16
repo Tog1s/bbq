@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'devise', '~> 4.6'
 gem 'devise-i18n'
-gem 'russian'
+gem 'rails-i18n'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'rmagick'
 gem 'fog-aws'
