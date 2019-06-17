@@ -67,6 +67,8 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+    errors:
+      self_subscriptions_error: 'Автор события не может подписаться на своё событие'
       
   # Ошибки
   error:

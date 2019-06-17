@@ -16,7 +16,6 @@ gem 'devise-i18n'
 gem 'rails-i18n'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'rmagick'
-gem 'fog-aws'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -29,6 +28,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'fog-aws'
 end
 
 group :development do
