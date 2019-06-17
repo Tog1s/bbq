@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   helper_method :current_user_can_edit?
+  helper_method :user_can_add_photos?
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(
@@ -16,4 +17,9 @@ class ApplicationController < ActionController::Base
       (model.try(:event).present? && model.event.user == current_user)
     )
   end
+  
+  def user_can_add_photos?(event)
+    user_signed_in? && event.visitors.include?(current_user)
+  end
+  
 end

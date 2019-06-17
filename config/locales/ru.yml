@@ -73,6 +73,11 @@ ru:
   photos:
     photo:
       destroy_confirm: 'Вы действительно хотите удалить фото?'
+      title: 'Новое фото'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Добавлено'
+      owner: 'Добавил'
       
   # Ошибки
   error:

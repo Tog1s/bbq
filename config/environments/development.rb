@@ -61,7 +61,7 @@ Rails.application.configure do
   
   config.action_mailer.delivery_method = :sendmail
 
-  config.action_mailer.default_url_option = { :host => '0.0.0.0:3000' }
+  #config.action_mailer.default_url_option = { :host => '0.0.0.0:3000' }
   
   config.action_mailer.smtp_settings = {
   address: ENV['SENDMAIL_ADDRESS'],
