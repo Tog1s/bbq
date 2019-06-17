@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require twitter/bootstrap
 //= require lightbox-bootstrap
+//= require maps
 //= require_tree .
 
 

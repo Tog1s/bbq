@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root "events#index"
+  
+  default_url_options :host => "ruby-togis.codeanyapp.com"
 
   resources :events do
     resources :comments, only: [:create, :destroy]
