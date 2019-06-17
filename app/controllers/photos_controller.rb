@@ -17,7 +17,6 @@ class PhotosController < ApplicationController
   def destroy
     message = {notice: I18n.t('controllers.photos.destroyed')}
 
-
     if current_user_can_edit?(@photo)
       @photo.destroy
     else

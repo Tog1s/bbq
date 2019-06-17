@@ -69,6 +69,10 @@ ru:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
     errors:
       self_subscriptions_error: 'Автор события не может подписаться на своё событие'
+  
+  photos:
+    photo:
+      destroy_confirm: 'Вы действительно хотите удалить фото?'
       
   # Ошибки
   error:

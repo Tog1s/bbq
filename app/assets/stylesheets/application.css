@@ -14,6 +14,9 @@
  *= require_self
  *= require_users
  *= require_events
+ *= require bootstrap_and_overrides
+ *= require twitter-bootstrap-static/sprites
+ *= require lightbox-bootstrap
  */
 
 /* Buffers */
