@@ -10,7 +10,7 @@ class Subscription < ApplicationRecord
   validates :user_email, uniqueness: {scope: :event_id}, unless: -> { user.present? }
   
   validate :check_email_uniq, on: :create
-  validate :check_current_user, on: :create
+  #validate :check_current_user, on: :create
 
   def user_name
     if user.present?
@@ -36,5 +36,9 @@ class Subscription < ApplicationRecord
   
   def check_current_user
     errors.add(:user, I18n.t('subscriptions.errors.self_subscriptions_error')) if event.user == user
+  end
+  
+  def subscription_params
+    params.fetch(:subscription, {}).permit(:user_email, :user_name)
   end
 end
