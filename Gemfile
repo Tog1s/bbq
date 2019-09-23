@@ -13,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'lightbox-bootstrap-rails', '5.1.0.1'
 
-gem 'devise', '~> 4.6'
+gem 'devise', '~> 4.7.1'
 gem 'devise-i18n'
 gem 'rails-i18n'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
