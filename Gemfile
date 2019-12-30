@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
-ruby '2.5.3'
+ruby '2.5.5'
 
 gem 'rails', '~> 5.2.2'
-gem 'puma', '~> 3.11'
+gem 'puma', '>= 3.12.2'
 
 gem 'jquery-rails'
 gem 'coffee-script', '~> 2.4', '>= 2.4.1'
