@@ -21,7 +21,7 @@ gem 'rmagick'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'turbolinks', '~> 5.2'
 
-gem "nokogiri", ">= 1.10.4"
+gem "nokogiri", ">= 1.10.8"
 
 group :development, :test do
   gem 'sqlite3', '< 1.4'
