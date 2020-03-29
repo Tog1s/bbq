@@ -235,7 +235,7 @@ DEPENDENCIES
   nokogiri (>= 1.10.8)
   pg
   puma (>= 4.3.2)
-  rails (~> 5.2.2)
+  rails (~> 5.2.4.1)
   rails-i18n
   rmagick
   sass-rails (~> 5.0)
