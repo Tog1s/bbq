@@ -5,16 +5,12 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby 2.5.3
+* Ruby 2.5.5
 
-* Rails 5.2.2
-
-* System dependencies
-
-* Configuration
+* Rails 5.2.4.2
 
 * Database creation
 
-* Database initialization
-
-* How to run the test suite
+```bash
+rails db:migrate
+```
