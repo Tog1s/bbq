@@ -16,6 +16,8 @@
 //= require turbolinks
 //= require twitter/bootstrap
 //= require lightbox-bootstrap
-//= require_tree .
+//= require lightbox_bootstraped
+//= require bootstrap.js
+//= require cable
 
 
