@@ -36,3 +36,8 @@ public/uploads
 /config/database.yml
 /config/secrets.yml
 
+# Ignore capistrano config
+capfile
+/config/deploy.rb
+/config/deploy/production.rb
+
