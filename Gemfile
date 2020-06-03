@@ -3,8 +3,8 @@ git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
 ruby '2.5.5'
 
-gem 'rails', '~> 5.2.4.2'
-gem 'puma', '>= 4.3.2'
+gem 'rails', '~> 5.2.4.3'
+gem 'puma', '>= 4.3.5'
 
 gem 'jquery-rails'
 gem 'coffee-script', '~> 2.4', '>= 2.4.1'
