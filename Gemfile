@@ -16,7 +16,7 @@ gem 'lightbox-bootstrap-rails', '5.1.0.1'
 gem 'devise', '~> 4.7.1'
 gem 'devise-i18n'
 gem 'rails-i18n'
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'carrierwave', '~> 1.3'
 gem 'rmagick'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'turbolinks', '~> 5.2'
