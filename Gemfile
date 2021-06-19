@@ -28,7 +28,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano', '~> 3.13.0'
+  gem 'capistrano', '~> 3.14.1'
   gem 'capistrano-rails', '~> 1.4.0'
   gem 'capistrano-passenger', '~> 0.2'
   gem 'capistrano-rbenv', '~> 2.1.6'
