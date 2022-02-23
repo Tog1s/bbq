@@ -9,6 +9,7 @@
 .idea
 .DS_Store
 */.DS_Store
+/.ruby-version
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
